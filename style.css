@@ -1,0 +1,491 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #0180a9;
+  padding-top: 1rem;
+  box-sizing: border-box;
+
+  height: 5rem;
+  align-items: center;
+}
+.logoimg {
+  margin-left: 4rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+nav {
+  max-width: 54rem;
+  /* background-color: green; */
+  float: right;
+}
+ul {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-right: 4rem;
+  /* background-color: red; */
+}
+li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+nav ul li a:hover {
+  color: black;
+}
+#home {
+  width: 100%;
+  margin-top: 4rem;
+  height: 48rem;
+  /* background-color: yellow; */
+  background-image: url(./images/bgoptional2.png);
+  background-size: cover;
+  /* filter: brightness(50%); */
+  background-repeat: no-repeat;
+  position: relative;
+}
+.intro {
+  width: 35rem;
+  height: 20rem;
+  /* background-color: yellowgreen; */
+  position: absolute;
+  left: 6rem;
+  top: 16rem;
+  text-align: center;
+  color: white;
+}
+.intro h1 {
+  font-size: 3rem;
+  font-family: "Lora", serif;
+}
+.intro span {
+  font-size: 2rem;
+}
+.intro button {
+  background: linear-gradient(to top left, #0180a9, #01eef4);
+  margin-top: 1rem;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+.intro button:hover {
+  background: linear-gradient(to top left, #01eef4, #0180a9);
+}
+.cvDownbtn {
+  font-size: medium;
+  text-decoration: none;
+  color: white;
+}
+#about {
+  width: 100%;
+  height: 53rem;
+  position: relative;
+  /* background-color: aqua; */
+}
+.stickyBackTotopbtn {
+  position: sticky;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  z-index: 10;
+  left: 95%;
+  top: 43rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #64cdde;
+}
+.btntotoplink {
+  text-decoration: none;
+  color: black;
+}
+.btntotoplink:hover {
+  color: white;
+}
+.aboutdiv {
+  width: 100%;
+  height: 43rem;
+  position: absolute;
+  top: 2.5rem;
+  /* background-color: yellow; */
+  text-align: center;
+}
+.aboutdiv h1 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.gridAbout {
+  width: 80%;
+  height: 30rem;
+  /* background-color: green; */
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.aboutcontentsection {
+  width: 90%;
+  height: 95%;
+  /* background-color: wheat; */
+  text-align: justify;
+}
+.aboutimgsection {
+  width: 90%;
+  height: 95%;
+  /* background-color: wheat; */
+}
+.aboutimgsection img {
+  width: 100%;
+  height: 28rem;
+}
+.Skillsdiv {
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  overflow-x: hidden;
+}
+.skillsanimationdiv {
+  position: absolute;
+  animation: loop 4s linear infinite alternate-reverse;
+}
+.skillsHeading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@keyframes loop {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(160%);
+  }
+}
+.skillsimg1 {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 10rem;
+  /* margin-right: 10rem; */
+}
+.skillsimg2 {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 10rem;
+  /* margin-right: 10rem; */
+}
+.skillsimg3 {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 10rem;
+  /* margin-right: 10rem; */
+}
+.skillsimg4 {
+  width: 8rem;
+  height: 8rem;
+  /* margin-right: 10rem; */
+}
+#project {
+  width: 100%;
+  /* background-color: yellow; */
+  height: 48rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6rem;
+}
+.gridProject {
+  width: 90%;
+  /* background-color: azure; */
+  height: 34rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects {
+  width: 90%;
+  /* background-color: green; */
+  height: 90%;
+}
+.subProjectsdiv {
+  width: 90%;
+  height: 90%;
+  background-color: #0180a9;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 4px grey;
+}
+.projects h2,
+h3 {
+  color: white;
+}
+.projectimg1 {
+  width: 100%;
+  height: 70%;
+}
+.projectimg1:hover {
+  width: 150%;
+  height: 120%;
+  transition: 1s ease-in-out;
+}
+.redirectproject {
+  position: absolute;
+  top: 86%;
+  width: 100%;
+  height: 30%;
+  background-color: #0180a9;
+}
+.redirectproject:hover {
+  top: 75%;
+  transition: 0.5s ease-in-out;
+}
+.viewprojectbtn {
+  width: 90%;
+  height: 25%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+  color: #007f92;
+  font-weight: 700;
+}
+#contact {
+  width: 100%;
+  height: 48rem;
+  /* background-color: yellowgreen; */
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6rem;
+}
+.contactinformation {
+  width: 70%;
+  height: 30%;
+  /* background-color: yellow;  */
+  margin: 10rem auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.contactlinkdiv {
+  width: 10rem;
+  height: 10rem;
+  /* background-color: red; */
+  box-sizing: border-box;
+  padding-top: 1rem;
+}
+.contactlinkdiv a {
+  text-decoration: none;
+  color: black;
+}
+.bordericon {
+  border: 1px black solid;
+  width: 7rem;
+  height: 7rem;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  border-radius: 50%;
+}
+.bordericon:hover {
+  color: white;
+  background-color: black;
+}
+footer {
+  background-color: #007f92;
+  height: 5rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* Responsive setting at 1200px */
+@media (max-width: 75rem) {
+  html {
+    font-size: 90%;
+  }
+  #home {
+    height: 40rem;
+  }
+}
+/* Responsive setting at 1000px */
+@media (max-width: 63rem) {
+  .Skillsdiv{
+    height: 6rem;
+    }
+  .skillsimg1 {
+    margin-right: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .skillsimg2 {
+    margin-right: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .skillsimg3 {
+    margin-right: 5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .skillsimg4 {
+    width: 5rem;
+    height: 5rem;
+  }
+  #project {
+    height: 100rem;
+  }
+  .gridProject {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bordericon {
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .redirectproject:hover {
+    top: 70%;
+  }
+  .viewprojectbtn {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+  #contact {
+    height: 30rem;
+  }
+  .contactinformation {
+    margin-top: 5rem;
+  }
+}
+/* Responsive setting at 900px */
+@media (max-width: 57rem) {
+  #home {
+    height: 38rem;
+  }
+  #about {
+    height: 70rem;
+  }
+  .gridAbout {
+    grid-template-columns: 1fr;
+  }
+  #project {
+    height: 100rem;
+  }
+  .aboutimgsection {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+/* Responsive setting at 760px */
+@media (max-width: 48rem) {
+  ul {
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+  #home {
+    height: 25rem;
+  }
+  .intro {
+    width: 20rem;
+    height: 15rem;
+    left: 1rem;
+    top: 5rem;
+  }
+  .intro h1 {
+    font-size: 2rem;
+  }
+  .intro span {
+    font-size: 1rem;
+  }
+  .bordericon {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  #about {
+    height: 80rem;
+  }
+  #contact {
+    height: 25rem;
+  }
+}
+/* Responsive setting at 550px */
+@media (max-width: 34rem) {
+  html {
+    font-size: 70%;
+  }
+  .intro button {
+    width: 10rem;
+  }
+  .cvDownbtn {
+    font-size: small;
+  }
+}
+/* Response setting at 410px */
+@media (max-width: 26rem) {
+  ul {
+    gap: 0.5rem;
+    margin-right: 1rem;
+  }
+  #home {
+    height: 23rem;
+  }
+  .bordericon {
+    font-size: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #about {
+    height: 80rem;
+  }.skillsimg1{
+    margin-right:3rem;
+}.skillsimg2{
+    margin-right:3rem;
+}.skillsimg3{
+    margin-right:3rem;
+}
+  #contact {
+    height: 25rem;
+  }
+}
+/* Response setting at 350px */
+@media (max-width: 22rem) {
+  .logoimg {
+    margin-left: 1rem;
+  }
+  #about {
+    height: 85rem;
+  }
+  .contactinformation {
+    gap: 1rem;
+  }
+  .contactlinkdiv {
+    width: 5rem;
+    height: 10rem;
+  }
+}
+/* Response setting at 320px */
+@media (max-width: 20rem) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 18rem) {
+  html {
+    font-size: 50%;
+  }
+}
